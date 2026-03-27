@@ -52,6 +52,9 @@ export default function ChatSection() {
     const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
     const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
+    // 使用ref来存储累积的内容，避免闭包问题
+    let accumulatedContent = '';
+
     try {
       await sendStreamRequest({
         functionUrl: `${supabaseUrl}/functions/v1/chat`,
@@ -65,7 +68,8 @@ export default function ChatSection() {
             // 根据文心API返回格式提取内容
             const chunk = parsed.choices?.[0]?.delta?.content || '';
             if (chunk) {
-              setStreamingContent((prev) => prev + chunk);
+              accumulatedContent += chunk;
+              setStreamingContent(accumulatedContent);
             }
           } catch (e) {
             console.warn('解析数据失败:', e);
@@ -73,13 +77,15 @@ export default function ChatSection() {
         },
         onComplete: () => {
           // 将流式内容添加到消息列表
-          setMessages((prev) => [
-            ...prev,
-            {
-              role: 'assistant',
-              content: streamingContent,
-            },
-          ]);
+          if (accumulatedContent) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                role: 'assistant',
+                content: accumulatedContent,
+              },
+            ]);
+          }
           setStreamingContent('');
           setIsLoading(false);
         },
