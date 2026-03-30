@@ -18,7 +18,7 @@ export default function PersonalInfo() {
             告白火山
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
-            正在积累个人项目，热衷于电子 DIY 的学生
+            手作电子小物的学生，在代码与硬件的交织中积累着属于自己的项目故事
           </p>
         </div>
 
