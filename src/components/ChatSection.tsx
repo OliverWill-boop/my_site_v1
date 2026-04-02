@@ -129,8 +129,8 @@ export default function ChatSection() {
             <CardTitle className="text-2xl md:text-3xl text-center gradient-text">
               💬 和我聊聊
             </CardTitle>
-            <p className="text-center text-sm md:text-base text-muted-foreground mt-2">
-              我的数字分身会回答你的问题
+            <p className="text-center text-base md:text-lg font-medium text-primary mt-2 animate-pulse">
+              你可以通过跟我的数字分身聊天从而了解到我的一切
             </p>
           </CardHeader>
           <CardContent>
