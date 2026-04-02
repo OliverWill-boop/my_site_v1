@@ -81,26 +81,6 @@ export default function PersonalInfo() {
             </CardContent>
           </Card>
 
-          {/* 擅长与关注 */}
-          <Card className="border-primary/20 hover:border-primary/40 transition-colors">
-            <CardContent className="pt-6">
-              <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-primary">
-                🎯 擅长与关注
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                <Badge className="text-sm md:text-base bg-indigo-100 text-indigo-800 hover:bg-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-400">
-                  具身智能
-                </Badge>
-                <Badge className="text-sm md:text-base bg-amber-100 text-amber-800 hover:bg-amber-200 dark:bg-amber-900/30 dark:text-amber-400">
-                  财经新闻
-                </Badge>
-                <Badge className="text-sm md:text-base bg-rose-100 text-rose-800 hover:bg-rose-200 dark:bg-rose-900/30 dark:text-rose-400">
-                  AI 应用
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* 个人特点 */}
           <Card className="border-primary/20 hover:border-primary/40 transition-colors">
             <CardContent className="pt-6">
