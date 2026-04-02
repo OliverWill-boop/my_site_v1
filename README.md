@@ -1,102 +1,106 @@
-# 欢迎使用你的秒哒应用代码包
-秒哒应用链接
-    URL:https://www.miaoda.cn/projects/app-aji3hipo24n7
+# volcano's site
 
-## 介绍
+## 🌋 项目简介
 
-项目介绍
+个人网站项目，包含个人信息展示和数字分身聊天功能。
 
-## 目录结构
+**网站地址：** [https://volcano-site.netlify.app/](https://volcano-site.netlify.app/)
 
-```
-├── README.md # 说明文档
-├── components.json # 组件库配置
-├── index.html # 入口文件
-├── package.json # 包管理
-├── postcss.config.js # postcss 配置
-├── public # 静态资源目录
-│   ├── favicon.png # 图标
-│   └── images # 图片资源
-├── src # 源码目录
-│   ├── App.tsx # 入口文件
-│   ├── components # 组件目录
-│   ├── contexts # 上下文目录
-│   ├── db # 数据库配置目录
-│   ├── hooks # 通用钩子函数目录
-│   ├── index.css # 全局样式
-│   ├── layout # 布局目录
-│   ├── lib # 工具库目录
-│   ├── main.tsx # 入口文件
-│   ├── routes.tsx # 路由配置
-│   ├── pages # 页面目录
-│   ├── services  # 数据库交互目录
-│   ├── types   # 类型定义目录
-├── tsconfig.app.json  # ts 前端配置文件
-├── tsconfig.json # ts 配置文件
-├── tsconfig.node.json # ts node端配置文件
-└── vite.config.ts # vite 配置文件
-```
+## 📸 网站预览
 
-## 技术栈
+![网站预览](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=personal%20website%20with%20modern%20design%2C%20clean%20interface%2C%20dark%20mode%2C%20chat%20section&image_size=landscape_16_9)
 
-Vite、TypeScript、React、Supabase
+## ✨ 功能特性
 
-## 本地开发
+- **个人信息展示**：包含个人简介、联系方式、当前在做的项目、兴趣方向等
+- **数字分身聊天**：基于AI的聊天功能，可以回答访客关于个人的问题
+- **响应式设计**：适配不同屏幕尺寸
+- **现代UI**：使用Tailwind CSS构建的美观界面
+- **流式聊天**：实时显示AI回复内容
 
-### 如何在本地编辑代码？
+## 🛠 技术栈
 
-您可以选择 [VSCode](https://code.visualstudio.com/Download) 或者您常用的任何 IDE 编辑器，唯一的要求是安装 Node.js 和 npm.
+- **前端**：React + TypeScript + Vite + Tailwind CSS
+- **后端**：Supabase Edge Functions
+- **部署**：Netlify
+
+## 🚀 本地开发
 
 ### 环境要求
 
+- Node.js ≥ 20
+- npm ≥ 10
+
+### 安装步骤
+
+1. **克隆仓库**
+   ```bash
+   git clone https://github.com/OliverWill-boop/my_site_v1.git
+   cd my_site_v1/app
+   ```
+
+2. **安装依赖**
+   ```bash
+   npm install
+   ```
+
+3. **配置环境变量**
+   创建 `.env` 文件并添加以下内容：
+   ```env
+   VITE_SUPABASE_URL=https://backend.appmiaoda.com/projects/supabase295656908486914048
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **启动开发服务器**
+   ```bash
+   npm run dev
+   ```
+
+5. **构建项目**
+   ```bash
+   npm run build
+   ```
+
+## 📦 部署
+
+项目已部署在Netlify上，部署配置如下：
+
+- **构建命令**：`npm run build`
+- **发布目录**：`dist`
+- **环境变量**：在Netlify控制台配置
+
+## 📁 目录结构
+
 ```
-# Node.js ≥ 20
-# npm ≥ 10
-例如：
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
+├── public/            # 静态资源目录
+│   ├── images/        # 图片资源
+├── src/               # 源码目录
+│   ├── components/    # 组件目录
+│   │   ├── ChatSection.tsx      # 数字分身聊天组件
+│   │   ├── PersonalInfo.tsx     # 个人信息组件
+│   ├── pages/         # 页面目录
+│   │   ├── HomePage.tsx         # 主页
+│   ├── services/      # 服务目录
+│   │   ├── chat.ts              # 聊天服务
+│   ├── supabase/      # Supabase配置
+│   │   ├── functions/chat/       # 聊天Edge Function
+│   ├── App.tsx        # 应用入口
+│   ├── main.tsx       # 主入口
+│   ├── routes.tsx     # 路由配置
+├── .env               # 环境变量
+├── package.json       # 包配置
+├── vite.config.ts     # Vite配置
 ```
 
-具体安装步骤如下：
+## 🤝 贡献
 
-### 在 Windows 上安装 Node.js
+欢迎提交Issue和Pull Request！
 
-```
-# Step 1: 访问Node.js官网：https://nodejs.org/，点击下载后，会根据你的系统自动选择合适的版本（32位或64位）。
-# Step 2: 运行安装程序：下载完成后，双击运行安装程序。
-# Step 3: 完成安装：按照安装向导完成安装过程。
-# Step 4: 验证安装：在命令提示符（cmd）或IDE终端（terminal）中输入 node -v 和 npm -v 来检查 Node.js 和 npm 是否正确安装。
-```
+## 📄 许可证
 
-### 在 macOS 上安装 Node.js
+MIT License
 
-```
-# Step 1: 使用Homebrew安装（推荐方法）：打开终端。输入命令brew install node并回车。如果尚未安装Homebrew，需要先安装Homebrew，
-可以通过在终端中运行如下命令来安装：
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-或者使用官网安装程序：访问Node.js官网。下载macOS的.pkg安装包。打开下载的.pkg文件，按照提示完成安装。
-# Step 2: 验证安装：在命令提示符（cmd）或IDE终端（terminal）中输入 node -v 和 npm -v 来检查 Node.js 和 npm 是否正确安装。
-```
+## 📞 联系方式
 
-### 安装完后按照如下步骤操作：
-
-```
-# Step 1: 下载代码包
-# Step 2: 解压代码包
-# Step 3: 用IDE打开代码包，进入代码目录
-# Step 4: IDE终端输入命令行，安装依赖：npm i
-# Step 5: IDE终端输入命令行，启动开发服务器：npm run dev -- --host 127.0.0.1
-```
-
-### 如何开发后端服务？
-
-配置环境变量，安装相关依赖
-如需使用数据库，请使用 supabase 官方版本或自行部署开源版本的 Supabase
-
-### 如何配置应用中的三方 API？
-
-具体三方 API 调用方法，请参考帮助文档：[源码导出](https://cloud.baidu.com/doc/MIAODA/s/Xmewgmsq7)，了解更多详细内容。
-
-## 了解更多
-
-您也可以查看帮助文档：[源码导出](https://cloud.baidu.com/doc/MIAODA/s/Xmewgmsq7)，了解更多详细内容。
+- **微信**：gaobaihuoshan
+- **邮箱**：gaobaihuoshan@163.com
