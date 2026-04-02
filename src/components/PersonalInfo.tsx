@@ -31,10 +31,10 @@ export default function PersonalInfo() {
                 ⚡ 当前在做
               </h3>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/30 dark:text-blue-400">
                   AI 应用
                 </Badge>
-                <Badge variant="secondary" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base bg-green-100 text-green-800 hover:bg-green-200 dark:bg-green-900/30 dark:text-green-400">
                   电子 DIY
                 </Badge>
               </div>
@@ -48,16 +48,16 @@ export default function PersonalInfo() {
                 ❤️ 兴趣方向
               </h3>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base border-purple-300 text-purple-700 hover:bg-purple-50 dark:border-purple-700 dark:text-purple-300 dark:hover:bg-purple-900/20">
                   编程
                 </Badge>
-                <Badge variant="outline" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base border-orange-300 text-orange-700 hover:bg-orange-50 dark:border-orange-700 dark:text-orange-300 dark:hover:bg-orange-900/20">
                   运动
                 </Badge>
-                <Badge variant="outline" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base border-pink-300 text-pink-700 hover:bg-pink-50 dark:border-pink-700 dark:text-pink-300 dark:hover:bg-pink-900/20">
                   音乐
                 </Badge>
-                <Badge variant="outline" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base border-teal-300 text-teal-700 hover:bg-teal-50 dark:border-teal-700 dark:text-teal-300 dark:hover:bg-teal-900/20">
                   做有意思的小玩意儿
                 </Badge>
               </div>
@@ -71,13 +71,13 @@ export default function PersonalInfo() {
                 🎯 擅长与关注
               </h3>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base bg-indigo-100 text-indigo-800 hover:bg-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-400">
                   具身智能
                 </Badge>
-                <Badge variant="secondary" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base bg-amber-100 text-amber-800 hover:bg-amber-200 dark:bg-amber-900/30 dark:text-amber-400">
                   财经新闻
                 </Badge>
-                <Badge variant="secondary" className="text-sm md:text-base">
+                <Badge className="text-sm md:text-base bg-rose-100 text-rose-800 hover:bg-rose-200 dark:bg-rose-900/30 dark:text-rose-400">
                   AI 应用
                 </Badge>
               </div>
@@ -90,7 +90,7 @@ export default function PersonalInfo() {
               <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-primary">
                 ✨ 个人特点
               </h3>
-              <p className="text-sm md:text-base text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground bg-gradient-to-r from-primary/10 to-accent/10 p-3 rounded-lg border border-primary/20">
                 可以把复杂的知识用人话讲出来
               </p>
             </CardContent>
