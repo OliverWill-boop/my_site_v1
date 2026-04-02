@@ -68,6 +68,9 @@ export default function PersonalInfo() {
                 <Badge className="text-sm md:text-base bg-purple-100 text-purple-800 hover:bg-purple-200 dark:bg-purple-900/30 dark:text-purple-400">
                   编程
                 </Badge>
+                <Badge className="text-sm md:text-base bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/30 dark:text-blue-400">
+                  画画
+                </Badge>
                 <Badge className="text-sm md:text-base bg-orange-100 text-orange-800 hover:bg-orange-200 dark:bg-orange-900/30 dark:text-orange-400">
                   运动
                 </Badge>
