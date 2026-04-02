@@ -48,16 +48,16 @@ export default function PersonalInfo() {
                 ❤️ 兴趣方向
               </h3>
               <div className="flex flex-wrap gap-2">
-                <Badge className="text-sm md:text-base border-purple-300 text-purple-700 hover:bg-purple-50 dark:border-purple-700 dark:text-purple-300 dark:hover:bg-purple-900/20">
+                <Badge className="text-sm md:text-base bg-purple-100 text-purple-800 hover:bg-purple-200 dark:bg-purple-900/30 dark:text-purple-400">
                   编程
                 </Badge>
-                <Badge className="text-sm md:text-base border-orange-300 text-orange-700 hover:bg-orange-50 dark:border-orange-700 dark:text-orange-300 dark:hover:bg-orange-900/20">
+                <Badge className="text-sm md:text-base bg-orange-100 text-orange-800 hover:bg-orange-200 dark:bg-orange-900/30 dark:text-orange-400">
                   运动
                 </Badge>
-                <Badge className="text-sm md:text-base border-pink-300 text-pink-700 hover:bg-pink-50 dark:border-pink-700 dark:text-pink-300 dark:hover:bg-pink-900/20">
+                <Badge className="text-sm md:text-base bg-pink-100 text-pink-800 hover:bg-pink-200 dark:bg-pink-900/30 dark:text-pink-400">
                   音乐
                 </Badge>
-                <Badge className="text-sm md:text-base border-teal-300 text-teal-700 hover:bg-teal-50 dark:border-teal-700 dark:text-teal-300 dark:hover:bg-teal-900/20">
+                <Badge className="text-sm md:text-base bg-teal-100 text-teal-800 hover:bg-teal-200 dark:bg-teal-900/30 dark:text-teal-400">
                   做有意思的小玩意儿
                 </Badge>
               </div>
