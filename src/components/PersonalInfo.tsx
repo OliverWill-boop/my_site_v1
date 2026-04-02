@@ -24,6 +24,23 @@ export default function PersonalInfo() {
 
         {/* 详细信息卡片 */}
         <div className="grid gap-4 md:gap-6">
+          {/* 如何联系我 */}
+          <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+            <CardContent className="pt-6">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-primary">
+                📞 如何联系我
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <Badge className="text-sm md:text-base bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:text-primary">
+                  wechat：gaobaihuoshan
+                </Badge>
+                <Badge className="text-sm md:text-base bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:text-primary">
+                  email：gaobaihuoshan@163.com
+                </Badge>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* 当前在做 */}
           <Card className="border-primary/20 hover:border-primary/40 transition-colors">
             <CardContent className="pt-6">
